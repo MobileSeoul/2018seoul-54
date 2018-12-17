@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/FirstAidListLayout"
+    tools:context="com.example.seunghyukshin.firstaidkit.FirstAidListActivity"
+    android:background="#C8BFE7">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:fontFamily="@font/bmdohyeon"
+            android:text="응급 상황"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#585858"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="4dp"
+            android:background="@drawable/first_aid_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 응급상황"
+            android:textColor="#C8BFE7"
+            android:textSize="30dp"
+            android:fontFamily="@font/bmdohyeon" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:background="#585858">
+        <TextView
+            android:layout_margin="4dp"
+            android:background="@drawable/first_aid_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmdohyeon"
+            android:textColor="#C8BFE7"
+            android:text="응급처치"
+            android:textSize="30dp"/>
+        <ListView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/listView2"
+            android:scrollbars="none"
+            android:divider="#585858"
+            android:dividerHeight="4dp">
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#C8BFE7"
+                android:layout_margin="12dp"
+                android:background="@drawable/dia_button"
+
+                android:textSize="16dp"
+                android:fontFamily="@font/bmdohyeon"
+                android:id="@+id/button_first_aid_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

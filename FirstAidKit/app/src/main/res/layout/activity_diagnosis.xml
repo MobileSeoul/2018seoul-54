@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A9F5E1"
+    tools:context="com.example.seunghyukshin.firstaidkit.DiagnosisActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:fontFamily="@font/bmdohyeon"
+            android:text="진단 내용"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:background="#585858"
+        android:padding="12dp">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#585858"
+            android:dividerHeight="2dp"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#A9F5E1"
+                android:layout_margin="12dp"
+                android:background="@drawable/dia_button"
+
+                android:textSize="16dp"
+                android:fontFamily="@font/bmdohyeon"
+                android:id="@+id/button_diagnosis_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기" />
+
+            <Button
+                android:layout_gravity="right|center_vertical"
+
+                android:textColor="#A9F5E1"
+                android:fontFamily="@font/bmdohyeon"
+
+                android:background="@drawable/dia_button"
+                android:id="@+id/button_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="진단하기"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

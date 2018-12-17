@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.seunghyukshin.firstaidkit.FirstAidActivity"
+    android:background="#FAAC58">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:fontFamily="@font/bmdohyeon"
+            android:text="병명"
+            android:id="@+id/NameText"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#585858"
+        android:padding="12dp">
+
+        <TextView
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="@font/bmdohyeon"
+            android:id="@+id/ContentsText"
+            android:lineSpacingExtra="4dp"
+            android:scrollbars="vertical"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#FAAC58"
+                android:layout_margin="12dp"
+                android:background="@drawable/dia_button"
+                android:textSize="16dp"
+                android:fontFamily="@font/bmdohyeon"
+                android:id="@+id/first_aid_re_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기" />
+
+            <Button
+                android:layout_gravity="right|center_vertical"
+                android:textColor="#FAAC58"
+                android:fontFamily="@font/bmdohyeon"
+                android:background="@drawable/dia_button"
+                android:id="@+id/first_aid_gotohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="확인"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

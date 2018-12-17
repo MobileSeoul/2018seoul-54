@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:id="@+id/widget_layout"
+    android:padding="@dimen/widget_margin"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘의 응급상황"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/bmdohyeon"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#585858">
+
+    <ImageView
+        android:id="@+id/appwidget_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:text="구급상자"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:fontFamily="@font/bmdohyeon" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="☞알아보러가기"
+        />
+</LinearLayout>
